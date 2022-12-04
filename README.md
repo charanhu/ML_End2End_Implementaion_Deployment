@@ -7,3 +7,36 @@
 4. [Git](https://git-scm.com/downloads)
 5. [GitHub](https://www.github.com)
 6. [Heroku Cloud Account](https://www.heroku.com/)
+
+
+## Create a new environment
+Method 1: Using Python
+```
+python -m venv venv
+```
+
+Method 2: Using Anaconda
+```
+conda create -n venv python=3.7
+```
+
+## Activate the environment
+Method 1: Using Python
+```
+venv\Scripts\activate
+```
+
+
+## requirements.txt
+```python
+Flask
+sklearn
+pandas
+numpy
+matplotlib
+```
+
+## Install the required packages
+```python
+pip install -r requirements.txt
+```
