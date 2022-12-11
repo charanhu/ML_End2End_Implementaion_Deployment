@@ -84,3 +84,21 @@ python app.py
         }
 }
 ```
+
+
+## Deployment with GitHub Actions and Azure Web App
+1. Go to github actions and create a new workflow
+2. Create a new web app in Azure
+3. Link the web app to the github repository
+
+
+## Create Dockerfile
+```python
+FROM python:3.7
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+EXPOSE 5000
+ENTRYPOINT ["python"]
+CMD ["app.py"]
+```
